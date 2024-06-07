@@ -14,14 +14,14 @@ public class Main {
     }
 
     public static void showAppInstallProposition(int clientOS, int clientDeviceYear) {
-        int currentYear = LocalDate.now().getYear();
-        if (clientOS == 0 && clientDeviceYear < currentYear) {
+        int yearToCompare = 2015;
+        if (clientOS == 0 && clientDeviceYear < yearToCompare) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear == currentYear) {
+        } else if (clientOS == 0 && clientDeviceYear >= yearToCompare) {
             System.out.println("Установите приложение для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear < currentYear) {
+        } else if (clientOS == 1 && clientDeviceYear < yearToCompare) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear == currentYear) {
+        } else if (clientOS == 1 && clientDeviceYear >= yearToCompare) {
             System.out.println("Установите приложение для Android по ссылке");
         }
     }
