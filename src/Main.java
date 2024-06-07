@@ -47,7 +47,7 @@ public class Main {
         showAppInstallProposition(1, 2022);
 
         //Задание 3
-        int deliveryDistance = 25;
+        int deliveryDistance = 24;
         if (deliveryDistance <= 0) {
             System.out.println("Расстояние должно быть больше 0");
             return;
