@@ -42,6 +42,7 @@ public class Main {
         //Задание 1
         int year = 2104;
         checkIfYearIsLeap(year);
+        System.out.println();
 
         //Задание 2
         showAppInstallProposition(1, 2022);
