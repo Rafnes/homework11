@@ -15,13 +15,13 @@ public class Main {
 
     public static void showAppInstallProposition(int clientOS, int clientDeviceYear) {
         int yearToCompare = 2015;
-        if (clientOS == 0 && clientDeviceYear < yearToCompare) {
+        if (clientOS == 0 && clientDeviceYear <= yearToCompare) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear >= yearToCompare) {
+        } else if (clientOS == 0 && clientDeviceYear > yearToCompare) {
             System.out.println("Установите приложение для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear < yearToCompare) {
+        } else if (clientOS == 1 && clientDeviceYear <= yearToCompare) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear >= yearToCompare) {
+        } else if (clientOS == 1 && clientDeviceYear > yearToCompare) {
             System.out.println("Установите приложение для Android по ссылке");
         }
     }
@@ -45,7 +45,7 @@ public class Main {
         System.out.println();
 
         //Задание 2
-        showAppInstallProposition(1, 2022);
+        showAppInstallProposition(0, 2016);
 
         //Задание 3
         int deliveryDistance = 24;
